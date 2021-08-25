@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: white;
+        font-size: 14px;
+    }
+    a {
+        color:slategrey;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    #link1{
+        color: blue
+    }
+    #link2{
+        color: white;
+        text-decoration: none;
+    }
+    #img-google {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    button {
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 40px;
+        border: 0px;
+        text-decoration: none;
+    }
+    #button3 {
+        background-color: hsl(220 100% 50%);
+        width: 130px;
+        }
+    #button3:hover{
+        background-color: hsl(220 100% 60%);
+    }
+    a:hover #button3 {
+        color:white;
+        text-decoration: none;
+    }
+    footer {
+        Background-color: rgb(245, 245, 245);
+        margin-bottom: 0px;
+        width: 100%;
+        font-size: 14px;
+        color: slategray;
+        display: flex;
+        flex-direction: column;
+    }
+    .last-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 20px;
+        margin-top: 0px;
+        color: slategray;
+    }
+    .footer1{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer2{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .item0 {
+        justify-content: flex-start;
+        justify-self: center;
+        margin: 20px;
+        height: 40px;
+    }
+    .item1 {
+        width: 100px;
+        justify-self: left;
+        margin: 20px;
+    }
+    .item2 {
+        justify-self: left;
+        margin: 20px;
+    }
+    .item3 {
+        justify-self: left;
+        margin: 20px;
+    }
+    .item4 {
+        justify-self: left;
+        width: 200px;
+        margin: 20px;
+    }
+    .item5 {
+        justify-self: right;
+        margin: 20px;
+    }
+    .item6 {
+        justify-self: right;
+        margin: 20px;
+    }
+    .item7 {
+        justify-self: right;
+        margin: 20px;
+    }
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        justify-items: center;
+        margin-left: 50%;
+        width: auto;
+        
+    }
+    .head1 {
+        margin: 10px;
+    }
+    .head2 {
+        margin: 10px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    .buscador{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #button1 {
+        background-color: rgb(245, 245, 245);
+        width: 180px;
+        margin-right: 5px;
+    }
+    #button1:hover{
+        border: 1px solid rgb(228, 228, 228);
+    }
+    #button2 {
+        background-color: rgb(245, 245, 245);
+        width: 180px;
+        margin-left: 5px;
+    }
+    #button2:hover{
+        border: 1px solid rgb(228, 228, 228);
+    }
+    p {
+        text-align: center;
+        font-size: 12px;
+        margin: 20px;
+    }
+    .box{
+        margin: 10px auto;
+        width: 600px;
+        height: 40;
+    }
+    .contenedor {
+        position: relative;
+        width: 600px;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .input {
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        height: 40px;
+        padding-left: 40px;
+        float: right;
+        border: 1px solid rgb(223, 220, 220);
+        margin-bottom: 20px;
+    }
+    .input:hover {
+        box-shadow: 2px 0.5px 3px rgb(223, 220, 220), -0.5px -0.5px 3px rgb(223, 220, 220);
+    }
+    .input:focus {
+        box-shadow: 2px 0.5px 3px rgb(223, 220, 220), -0.5px -0.5px 3px rgb(223, 220, 220);
+        outline: 0 none;
+    }
+    .contenedor .lupa {
+        width: 20px;
+        position: absolute;
+        top:50%;
+        margin-left: 10px;
+        margin-top: 10px;
+        z-index: 1;
+    }
+    hr {
+        color: rgb(223, 220, 220);
+        margin-top: 15px;
+    }
+    #apps {
+        width: 20px;
+        padding: 8px;
+    }
+    #apps:hover {
+        border-radius: 50%;
+        background-color: rgb(223, 220, 220);
+    }
+</style>
+<html>
+    <head>
+        <title>My google webpage</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <nav class="header">
+            <div class="head1"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></div>
+            <div class="head2"><a href="https://www.google.com.co/imghp?hl=es&ogbl">Imágenes</a></div>
+            <a href="https://www.google.com.co/intl/es/about/products"><img id="apps" src="https://static.thenounproject.com/png/143229-200.png" alt="Google Apps"></a>
+            <button id="button3" type="button"><a id="link2" href="https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Iniciar sesión</a></button>
+        </nav>
+        <div>
+            <img id="img-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+        </div>
+        <form action="servidor"> 
+            <div class="box">
+                <div class="contenedor">
+                    <img class="lupa" src="https://assets.stickpng.com/images/585e4ae1cb11b227491c3393.png" alt="lupa">
+                    <input class="input" type="search">
+                </div>
+            </div>
+            <div class="buscador">
+                <button id="button1" type="submit">Buscar con google
+                </button>
+                <button id="button2" type="submit">Me siento con suerte
+                </button>
+            </div>
+        </form>
+        <p>Ofrecido por Google en: <a id="link1" href="https://www.google.com/setprefs?sig=0_rLg1Fd-Qa_0FSVwu-I2lE_j5Xpk%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwil_bCmscryAhUOCt4KHTEiAWkQ2ZgBCA4">Español (Latinoamérica)</a></p>
+        <footer>
+            <div class="item0">Colombia<hr></div>
+            <div class="last-footer">
+                <div class="footer1">
+                    <div class="item1"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwil_bCmscryAhUOCt4KHTEiAWkQkNQCCA8&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-CO%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw0R9i_MrNQ6svZPqUBXIqUz">Sobre Google</a></div>
+                    <div class="item2"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwil_bCmscryAhUOCt4KHTEiAWkQkdQCCBA&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fes_co%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3rrdPDmaplOng1_KTmo7NX">Publicidad</a></div>
+                    <div class="item3"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwil_bCmscryAhUOCt4KHTEiAWkQktQCCBE&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Negocios</a></div>
+                    <div class="item4"><a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></div>
+                </div>
+                <div class="footer2">
+                    <div class="item5"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwil_bCmscryAhUOCt4KHTEiAWkQ8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Des-CO%26fg%3D1&usg=AOvVaw1_X222Qqg1uTCUxliWRyUF">Privacidad</a></div>
+                    <div class="item6"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwil_bCmscryAhUOCt4KHTEiAWkQ8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Des-CO%26fg%3D1&usg=AOvVaw19O8F2r_WI9DXc_xB84Zf8">Condiciones</a></div>
+                    <div class="item7">Preferencias</div>
+                </div>
+                </div>
+        </footer>
+    </body>   
+</html>
